@@ -28,37 +28,45 @@
     </div>
   </nav>
 
-  <section id="contact">
-    <div >
-      <h1 class="title">Contact Form</h1>
+  <section class="contact-section">
+    <div class="contact-section-title">
+      <p>Contact Me</p>
     </div>
-    <div class="contact-form">
-      <form method="post">
-        <div class="input-group">
-          <label for="name">Full Name:</label><br />
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required maxlength="50" onkeyup='validateName()'/>
-          <div id="name-err"></div>
-        </div>
-
-        <div class="input-group">
-          <label for="email">Email Address:</label><br />
-          <input type="email" id="email" name="email" placeholder="Enter your email" required onkeyup="validateEmail()"/>
-          <div id="email-err"></div>
-        </div>
-
-        <div class="input-group">
-          <label for="message">Message:</label><br />
-          <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required onkeyup="validateMessage()"></textarea>
-          <div id="message-err"></div>
-        </div>
-
-        <div class="input-group">
-          <button type="submit" onclick="return validateForm()">Submit</button>
-          <div id="submit-err"></div>
-        </div>
-      </form>
+    <div class="contact-section-container">
+      <div class="contact-section-form">
+        <form action="submit_form.php" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-section-info">
+        <p><b>Name:</b><br>Abdullah Asim</p>
+        <p>---------------</p>
+        <p><b>Phone Number:</b><br>+92 3275883747</p>
+        <p>------------------------</p>
+        <p><b>Email Address:</b><br><a href="mailto:abdullahasim@gmail.com">abdullahasim@gmail.com</a></p>
+      </div>
+      <div class="contact-section-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.6742447570664!2d72.9829875753832!3d33.639687473315114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df97dd09c3636d%3A0x763f088c2fa1f43a!2sZakaria%20Hostel!5e0!3m2!1sen!2s!4v1739729771897!5m2!1sen!2s"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
+  
 
   <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
   
